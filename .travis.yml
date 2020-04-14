@@ -1,3 +1,5 @@
+
+
 language: node_js
 node_js:
   - '12'
@@ -11,5 +13,5 @@ before_install:
 script:
   - parcel build ./index.js
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t HUASwg1240374391/mini-react:latest .
-  - docker push HUASwg1240374391/mini-react:latest
+  - docker build -t huas_wg/mini-react:latest .
+  - docker push huas_wg/mini-react:latest
